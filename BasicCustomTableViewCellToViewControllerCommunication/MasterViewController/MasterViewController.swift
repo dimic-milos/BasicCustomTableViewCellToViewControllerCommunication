@@ -59,7 +59,7 @@ extension MasterViewController: UITableViewDataSource {
 extension MasterViewController: CustomTableViewCellDelegate {
     
     func didTapimageViewMain(inCell cell: CustomTableViewCell) {
-        if let tableView: UITableView = superviewForElement(cell) {
+        if let tableView = cell.superview as? UITableView {
             let index = tableView.indexPath(for: cell)
             if let indexPathRow = index?.row {
                 print("didTapimageViewMain from cell at index: \(indexPathRow)")
@@ -68,7 +68,7 @@ extension MasterViewController: CustomTableViewCellDelegate {
     }
     
     func didTapButtonMain(inCell cell: CustomTableViewCell) {
-        if let tableView: UITableView = superviewForElement(cell) {
+        if let tableView = cell.superview as? UITableView {
             let index = tableView.indexPath(for: cell)
             if let indexPathRow = index?.row {
                 print("didTapButtonMain from cell at index: \(indexPathRow)")
