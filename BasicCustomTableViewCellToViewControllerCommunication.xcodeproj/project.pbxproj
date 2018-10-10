@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74D1014D216E54C8000EE303 /* CustomTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1014C216E54C8000EE303 /* CustomTableViewCellTests.swift */; };
+		74D10150216E59C3000EE303 /* UIGestureRecognizer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1014F216E59C3000EE303 /* UIGestureRecognizer+Extensions.swift */; };
 		74DBAD14215A75D000BAC0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DBAD13215A75D000BAC0B2 /* AppDelegate.swift */; };
 		74DBAD19215A75D000BAC0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DBAD17215A75D000BAC0B2 /* Main.storyboard */; };
 		74DBAD1B215A75D300BAC0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DBAD1A215A75D300BAC0B2 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		74D1014C216E54C8000EE303 /* CustomTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellTests.swift; sourceTree = "<group>"; };
+		74D1014F216E59C3000EE303 /* UIGestureRecognizer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Extensions.swift"; sourceTree = "<group>"; };
 		74DBAD10215A75D000BAC0B2 /* BasicCustomTableViewCellToViewControllerCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCustomTableViewCellToViewControllerCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DBAD13215A75D000BAC0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74DBAD18215A75D000BAC0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
+		74D1014E216E5997000EE303 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74D1014F216E59C3000EE303 /* UIGestureRecognizer+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		74DBAD07215A75D000BAC0B2 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		74DBAD27215A75D300BAC0B2 /* BasicCustomTableViewCellToViewControllerCommunicationTests */ = {
 			isa = PBXGroup;
 			children = (
+				74D1014E216E5997000EE303 /* Extensions */,
 				74D1014B216E54B7000EE303 /* CustomTableViewCell */,
 				74DBAD28215A75D300BAC0B2 /* BasicCustomTableViewCellToViewControllerCommunicationTests.swift */,
 				74DBAD2A215A75D300BAC0B2 /* Info.plist */,
@@ -241,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D10150216E59C3000EE303 /* UIGestureRecognizer+Extensions.swift in Sources */,
 				74D1014D216E54C8000EE303 /* CustomTableViewCellTests.swift in Sources */,
 				74DBAD29215A75D300BAC0B2 /* BasicCustomTableViewCellToViewControllerCommunicationTests.swift in Sources */,
 			);
