@@ -17,8 +17,9 @@ class CustomTableViewCellTests: XCTestCase {
         super.setUp()
         
         let bundle = Bundle.init(for: CustomTableViewCell.self)
-        let nibs = bundle.loadNibNamed("CustomTableViewCell", owner: nil, options: nil)
-        sut = nibs?.first as? CustomTableViewCell
+        let nib = bundle.loadNibNamed("CustomTableViewCell", owner: nil, options: nil)
+        guard let customTableViewCell = nib?.first as? CustomTableViewCell else { XCTFail() ; return }
+        sut = customTableViewCell
     }
     
     override func tearDown() {
